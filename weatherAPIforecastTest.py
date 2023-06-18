@@ -2,17 +2,14 @@ import requests
 mdx_key = 'FA8F60A1A6F5D9254DD8E1D3566E7C30'
 # replace with your KEY!
 mdx_url = ('https://mdx.meteotest.ch/api_v1?key={key}&service=solarforecast'
-           '&action=siteadd&latitude=47.2&longitude=7.2&inclination=30'
-           '&azimuth=180&format=json&name=StrategyWeatherDataForecasts'.format(key=mdx_key))
+           '&action=getforecast&format=json&name=StrategyWeatherDataForecasts'.format(key=mdx_key))
 
 r = requests.get(mdx_url)
 result = r.json()
-# if it worked, variable 'result' contains details of
-# created site. Otherwise 'result' contains an
-# error message.
 
 if r.status_code == 200:
-  print("It worked!")
+  print("forecast data:")
+  print(result)
 else:
   print("An error occurred:")
   # let's check what the problem is...
