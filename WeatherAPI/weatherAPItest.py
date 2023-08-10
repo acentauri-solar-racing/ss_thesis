@@ -1,6 +1,6 @@
 import requests
 mdx_key = 'FA8F60A1A6F5D9254DD8E1D3566E7C30'
-# replace with your KEY!
+mdx_key = '54F773F38E50F4CF562384A44B9948D3'
 mdx_url = ('https://mdx.meteotest.ch/api_v1?key={key}&service=solarforecast'
            '&action=siteadd&latitude=47.2&longitude=7.2&inclination=30'
            '&azimuth=180&format=json&name=StrategyWeatherDataForecasts'.format(key=mdx_key))
