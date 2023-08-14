@@ -1,0 +1,13 @@
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+% !TeX root = ../report.tex
+
+\begin{abstract}
+Every two years, teams from around the world gather in Australia to participate in the Bridgestone World Solar Challenge, a competition for solar-powered cars that covers a distance of more than 3000 kilometers, starting in Darwin and finishing in Adelaide. During the race, it is essential for teams to have robustly designed solar cars and reliable strategies in order to have a chance of completing the race. For this reason, it is invaluable to implement simulations that allow for rapid design iterations and optimization prior to the competition, which are the primary tasks tackled in this thesis.
+
+The solar car simulation introduced in this work is implemented using Matlab and Simulink and comprises of three main subsystems. The first subsystem contains all the modeling equations of the solar car components. The second subsystem is responsible for providing pre-processed weather data. Lastly, the Driver subsystem includes controllers that simulate the behavior of a real driver who is rules compliant and attempts to follow a reference strategy. Utilizing the simulation, a sensitivity analysis is performed on key design parameters.
+
+The second goal of the thesis is to generate a race strategy that optimizes the allocation of the available energy such that the overall drive time is minimized. An analytical method is proposed to generate a reference state-of-charge profile, which can later be used in the simulation or during the competition.
+
+Both objectives were met to varying degrees of success: The simulation requires only minor adjustments, while the profile generator still needs further improvements to function in all possible scenarios.
+\end{abstract}

@@ -1,0 +1,109 @@
+% Styles
+\tikzset{
+	lookBlock/.style = {rectangle, thick, minimum width=2.5cm, minimum height=1.5cm,text centered, text width=3cm, draw=black, fill=white},
+	block/.style = {rectangle, thick, minimum width=2.5cm, minimum height=1.5cm,text centered, text width=2.5cm, draw=none, fill=white},
+	arrow/.style= {thick, black, ->, >=stealth},
+	line/.style= {thick, black},
+	textOutput/.style = {black,right},
+	textInput/.style = {black,left},
+	container/.style = {gray,dashed}
+}
+
+\begin{tikzpicture}
+	% Definition
+	%for three arrows
+	\def\right{0.8}
+	\def\left{-\right}
+	%for two arrows
+	\def\UP{0.55}
+	\def\DOWN{-\UP}
+	%radius
+	\def\radius{0.07}
+	
+	% Blocks
+	\matrix[column sep=1.3cm, row sep=0.7cm]{
+		%first row
+		& \coordinate (c12); & & & &  & & & & &
+		\\
+		%second row
+		\coordinate (c21); & & & & &  & & \node[block] (C1) {}; & & &
+		\\
+		%third row
+		\coordinate (c31); & & \coordinate (c33); & & &  & \coordinate (c37); & \node[block] (C2) {}; & & &
+		\\
+		%fourth row
+		\coordinate (c41); & & & \coordinate (c44); & &  \coordinate (c46); & \coordinate (c47); & \node[block] (C3) {}; & & \coordinate (c410); &
+		\\
+		%fifth row
+		& & & \coordinate (c54); & \node[lookBlock] (MS) {$v_\mathrm{max}(d)$ \\ 1D Look-up Table}; &  \coordinate (c56); & \node[block] (D1) {}; & \node[block] (C4) {}; & & &
+		\\
+		%sixth row
+		& & \coordinate (c63); & & \node[lookBlock] (DN) {Day number$(t_\mathrm{sim})$ \\ 1D Look-up Table}; &  & \node[block] (D2) {}; & \node[block] (C5) {}; & & &
+		\\
+		%seventh row
+		& & \coordinate (c73); & & \node[lookBlock] (Driving) {Driving is needed$(t_\mathrm{sim})$ \\ 1D Look-up Table}; &  & \node[block] (D3) {}; & \node[block] (C6) {}; & & &
+		\\
+		%eigth row
+		& & & & &  & \coordinate (c87); & & & \coordinate (c810); &
+		\\
+		%ninth row
+		& & & & &  & & & \coordinate (c99); & &
+		\\
+	};
+	
+	% Container
+	\draw[container] (c12) rectangle (c99);
+	\node[gray, anchor=north west] at (c12.north west) {Driver};
+	
+	% Arrows
+	%to second
+	\draw[arrow] ([yshift=\UP cm]c21) node[textInput] {$x_\mathrm{SoC}$} -- ([yshift=\UP cm]C1.west);
+	\draw[arrow] ([yshift=\DOWN cm]c21) node[textInput] {$F_\mathrm{trac,lim}$} -- ([yshift=\DOWN cm]C1.west);
+	%to third
+	\draw[arrow] ([yshift=\UP cm]c31) node[textInput] {$v$} -- ([yshift=\UP cm]C2.west);
+	\draw[arrow] ([yshift=\DOWN cm]c31) node[textInput] {$t_\mathrm{sim}$} -- ([yshift=\DOWN cm]C2.west);
+	%to fourth
+	\draw[arrow] ([yshift=\DOWN cm]C3.east) -- ([yshift=\DOWN cm]c410) node[textOutput] {$F_\mathrm{trac,req}$};
+	\draw[arrow] ([yshift=\UP cm]c41) node[textInput] {$d$} -- ([yshift=\UP cm]C3.west);
+	\draw[arrow] ([yshift=\DOWN cm]c46) -- ([yshift=\DOWN cm]C3.west);
+	%to fifth
+	\draw[line] ([yshift=\UP cm]c44) -- (c54);
+	\draw[arrow] (c54) -- (MS);
+	\draw[line] (MS) -- (c56) node[midway, above] {$v_\mathrm{max}$};
+	\draw[arrow] (c56) -- (D1);
+	\draw[line] ([yshift=\DOWN cm]c46) -- (c56);
+	\draw[arrow] (D1) -- (C4) node[midway, above, text width=1.2cm, text centered] {Acc is dec};
+	\draw[arrow] ([yshift=\UP cm, xshift=\left cm]c47) -- ([xshift=\left cm]D1.north);
+	\draw[arrow] ([yshift=\DOWN cm]c37) -- (D1);
+	\draw[arrow] ([yshift=\UP cm, xshift=\right cm]c37) -- ([xshift=\right cm]D1.north);
+	%to sixth
+	\draw[arrow] (c63) -- (DN);
+	\draw[arrow] (DN) -- (D2);
+	\draw[arrow] (D2) -- (C5) node[midway, above, text width=1.2cm, text centered] {Dec is dec};
+	%to seventh
+	\draw[line] ([yshift=\DOWN cm]c33) -- (c73);
+	\draw[arrow] (c73) -- (Driving);
+	\draw[arrow] (Driving) -- (D3);
+	\draw[arrow] (D3) -- (C6) node[midway, above, text width=1.2cm, text centered] {Cruise is dec};
+	%to eigth
+	\draw[line] (D3) -- (c87);
+	\draw[arrow] (c87) -- (c810) node[textOutput, text width=1.8cm, text centered] {Stop force is decided};
+	
+	% Dots
+	\fill [black] ([yshift=\DOWN cm]c33) circle (\radius cm);
+	\fill [black] ([yshift=\DOWN cm]c37) circle (\radius cm);
+	\fill [black] ([yshift=\UP cm, xshift=\right cm]c37) circle (\radius cm);
+	
+	\fill [black] ([yshift=\UP cm]c44) circle (\radius cm);
+	\fill [black] ([yshift=\UP cm, xshift=\left cm]c47) circle (\radius cm);
+	
+	\fill [black] (c56) circle (\radius cm);
+	
+	\fill [black] (c63) circle (\radius cm);
+	
+	%Fit
+	\node [inner sep=-0.5\pgflinewidth,fit=(D1)(D2)(D3), draw] {Decision \\ Maker};
+	\node [inner sep=-0.5\pgflinewidth,fit=(C1)(C2)(C3)(C4)(C5)(C6), draw] {Controllers};
+	
+	
+\end{tikzpicture}

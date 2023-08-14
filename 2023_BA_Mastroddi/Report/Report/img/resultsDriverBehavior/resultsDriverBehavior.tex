@@ -1,0 +1,89 @@
+\begin{tikzpicture}
+	
+	\begin{groupplot}[
+		group style={
+			group size=1 by 2,
+			vertical sep=0.4cm,
+			xlabels at=edge bottom,
+			xticklabels at=edge bottom,
+		},
+		width=\textwidth,
+		height=0.3\textwidth,
+		unbounded coords=jump,
+		xmin=0,
+		xmax=4,
+		grid=both,
+		legend pos={south west},
+		legend cell align={left},
+		legend style={draw=none},
+		]
+		
+		\nextgroupplot[
+		xlabel near ticks,
+		xtick={0,0.5,1,1.5,2,2.5,3,3.5,4},
+		ylabel near ticks,
+		ymin=0,
+		ymax=120,
+		ytick={0,20,40,60,80,100,120},
+		yticklabels={0,20,40,60,80,100,120},
+		ylabel={Velocity / $\unitfrac{km}{h}$},
+		]
+		\addplot [black, thick, dashdotdotted]
+		table[]{img/resultsDriverBehaviorVel/resultsDriverBehaviorVel-1.tsv};
+		\addlegendentry{$v_\mathrm{max}$}
+		
+		\addplot [black, dashed, thick]
+		table[]{img/resultsDriverBehaviorVel/resultsDriverBehaviorVel-2.tsv};
+		\addlegendentry{$v_\mathrm{cruise}$}
+		
+		\addplot [black, dashdotted, thick]
+		table[]{img/resultsDriverBehaviorVel/resultsDriverBehaviorVel-3.tsv};
+		\addlegendentry{$v_\mathrm{min}$}
+		
+		\addplot [blue, thick]
+		table[]{img/resultsDriverBehaviorVel/resultsDriverBehaviorVel-4.tsv};
+		\addlegendentry{$v_\mathrm{ref}$}
+		
+		\addplot [magenta, dashed, thick]
+		table[]{img/resultsDriverBehaviorVel/resultsDriverBehaviorVel-5.tsv};
+		\addlegendentry{$v$}
+		
+		\nextgroupplot[
+		xlabel near ticks,
+		xtick={0,0.5,1,1.5,2,2.5,3,3.5,4},
+%		xticklabels={0,0.5,1,1.5,2,2.5,3,3.5,4},
+		xlabel={Simulation time / h},
+		ylabel near ticks,
+		ymin=0,
+		ymax=1.1,
+		ytick={0,0.2,0.4,0.6,0.8,1},
+		yticklabels={0,0.2,0.4,0.6,0.8,1},
+		ylabel style={align=left}, ylabel=State of charge / --\\Control modes / --,
+		]
+		\addplot [green, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-1.tsv};
+		\addlegendentry{Stop force is decided}
+		
+		\addplot [red, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-2.tsv};
+		\addlegendentry{Cruise is decided}
+		
+		\addplot [cyan, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-3.tsv};
+		\addlegendentry{Deceleration is decided}
+		
+		\addplot [brown, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-4.tsv};
+		\addlegendentry{Acceleration is decided}
+		
+		\addplot [blue, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-5.tsv};
+		\addlegendentry{$x_\mathrm{SoC,ref}$}
+		
+		\addplot [magenta, dashed, thick]
+		table[]{img/resultsDriverBehaviorSoC/resultsDriverBehaviorSoC-6.tsv};
+		\addlegendentry{$x_\mathrm{SoC}$}
+		
+	\end{groupplot}
+	
+\end{tikzpicture}%

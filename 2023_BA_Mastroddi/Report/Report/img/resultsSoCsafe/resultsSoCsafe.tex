@@ -1,0 +1,50 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 11-Jan-2023 11:34:24.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.5\textwidth,
+unbounded coords=jump,
+xmin=0,
+xmax=3027.23523240565,
+%xlabel style={font=\color{white!15!black}},
+xtick={0,500,1000,1500,2000,2500,3000},
+xticklabels={0,500,1000,1500,2000,2500,3000},
+xlabel={Distance / km},
+ymin=0,
+ymax=100,
+%ylabel style={font=\color{white!15!black}},
+ytick={0,20,40,60,80,100},
+yticklabels={0,20,40,60,80,100},
+ylabel={State of charge / \%},
+axis background/.style={fill=white},
+grid=both,
+legend pos=north east,
+legend cell align={left},
+legend style={draw=none},
+]
+\addplot [blue, dashdotted, thick]
+  table[]{img/resultsSoCsafe/resultsSoCsafe-1.tsv};
+  \addlegendentry{First iteration}
+\addplot [blue, thick]
+  table[]{img/resultsSoCsafe/resultsSoCsafe-2.tsv};
+  \addlegendentry{Second iteration}
+%\addplot [black, dotted, forget plot]
+%  table[]{img/resultsSoCsafe/resultsSoCsafe-3.tsv};
+\addplot [black, thick]
+  table[]{img/resultsSoCsafe/resultsSoCsafe-4.tsv};
+  \addlegendentry{Overnight stops}
+\addplot [black, dashdotted, thick]
+  table[]{img/resultsSoCsafe/resultsSoCsafe-5.tsv};
+  \addlegendentry{Control stops}
+\addplot[dashed, black, thick] coordinates {(-1,10) (3100,10)};
+  \node[black, fill=white] at (axis cs: 250,10) {$x_\mathrm{SoC,min}$};
+\end{axis}
+\end{tikzpicture}%

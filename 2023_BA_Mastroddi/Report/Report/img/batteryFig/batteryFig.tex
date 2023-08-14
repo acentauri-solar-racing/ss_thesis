@@ -1,0 +1,8 @@
+\begin{circuitikz}
+	
+	\draw (0,0) to [american voltage source, l_=$U_\mathrm{bat,oc}$] (0,3);
+	\draw (0,3) to [resistor, l^=$R_\mathrm{bat}$, -o] (4,3);
+	\draw (0,0) to [short,i<=$I_\mathrm{bat}$,-o] (4,0);
+	\draw (4,3) to[open, v^>=\mbox{ }$U_\mathrm{bat}$] (4,0);
+	
+\end{circuitikz}

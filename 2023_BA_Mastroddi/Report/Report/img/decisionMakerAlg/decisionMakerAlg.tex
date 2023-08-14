@@ -1,0 +1,38 @@
+\begin{algorithmic}
+%	\Input{Training sentences $S_{i}$}
+%	\Output{Sentence instances with cost-vectors for training $S_{i,c_i}$}
+	\State Check if a control stop is approaching: $d_\mathrm{s} \geq d_\mathrm{ns}$
+	\State Check if the end of the day is near: $t_\mathrm{s} \geq t_\mathrm{ns}$
+	\State Check if the racing day is started
+	\If{\enquote{Overnight stop is needed}}  \Comment{Deceleration}
+	\If{$v > 0$}
+	\State \enquote{Deceleration is decided} $\gets$ "true"
+	\Else
+	\State \enquote{Stop force is decided} $\gets$ "true"
+	\EndIf
+	\ElsIf{\enquote{Control stop is needed}}
+	\If{$v > 0$}
+	\State \enquote{Deceleration is decided} $\gets$ "true"
+	\Else
+	\State \enquote{Stop force is decided} $\gets$ "true"
+	\If{30 minutes have passed}
+	\State \enquote{Control stop is over} $\gets$ "true"
+	\EndIf
+	\EndIf
+	\ElsIf{\enquote{Racing day is started}}  \Comment{Acceleration}
+	\If{$v < 0.9 \cdot \min(v_\mathrm{max}, v_\mathrm{ref})$}
+	\State \enquote{Acceleration is decided} $\gets$ "true"
+	\Else
+	\State \enquote{Cruise is decided} $\gets$ "true"
+	\EndIf
+	\ElsIf{\enquote{Control stop is over}}
+	\If{$v < 0.9 \cdot \min(v_\mathrm{max}, v_\mathrm{ref})$}
+	\State \enquote{Acceleration is decided} $\gets$ "true"
+	\Else
+	\State \enquote{Cruise is decided} $\gets$ "true"
+	\EndIf
+	\Else
+	\State \enquote{Cruise is decided} $\gets$ "true"  \Comment{Cruise}
+	\EndIf
+
+\end{algorithmic}

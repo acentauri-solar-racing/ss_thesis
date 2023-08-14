@@ -1,0 +1,91 @@
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+% !TeX root = ../report.tex
+
+\chapter{Results and Discussion}
+\label{chp:results}
+In this chapter, a detailed analysis of the driver's behavioral decision-making is presented in~\cref{sec:resultsDriverBehavior}. Additionally, through the Simulink simulation, a comprehensive sensitivity analysis of several key design parameters is conducted in~\cref{sec:resultsSensitivityAnalysis} to examine their impact on the total racing time. Lastly, in~\cref{sec:resultsStrategy}, the SoC profile that minimizes the driving time is shown and discussed.
+
+
+\section{Simulation}
+\subsection{Driver Behavior}
+\label{sec:resultsDriverBehavior}
+The first simulation results show how the driver's decisions affect the solar car's performance.~\Cref{fig:resultsDriverBehavior} consists of two plots, one displaying the car's velocity and the other showing the battery's SoC during the first $\unit[4]{hours}$ of the simulation. The reason for including these two quantities is that they are closely related through the cascaded cruise controller, as explained in~\cref{sec:simDriverControllers}. It is worth noting that the reference state of charge used to produce these results is not the optimal one determined by the method outlined in~\ref{chp:strategy}, but rather a simplified linear reference.
+\begin{sidewaysfigure}[htbp]
+	\centering
+	\begin{externalize}{resultsDriverBehavior}
+		\input{img/resultsDriverBehavior/resultsDriverBehavior.tex}
+	\end{externalize}
+	\caption{Group plot of the first simulated four hours of the race. Above, the velocity plot including all limits, the reference velocity in blue, and the car velocity in pink. Below, the SoC and control mode plot with reference SoC and SoC.}
+	\label{fig:resultsDriverBehavior}
+\end{sidewaysfigure}
+
+The simulation begins with the \enquote{Acceleration is decided} mode active until the car reaches the target reference velocity. At this point, the \enquote{Cruise is decided} mode is engaged for several hours. The plots demonstrate that the car's velocity and SoC closely follow their respective references, thereby confirming the effectiveness of the cascaded controller. Additionally, the car's velocity stays within the expected range from $\unitfrac[60]{km}{h}$ to $\unitfrac[110]{km}{h}$. There is a slight deviation of the SoC from the reference at around $\unit[2.5]{hours}$ into the simulation, which can be attributed to the peak solar irradiance and the car's maximum velocity.
+
+At around $\unit[3.4]{hours}$, the \enquote{Deceleration is decided} mode is activated as a control stop approaches. The car's velocity decreases until it comes to a stop, followed by the engaging of the mechanical brake through the activation of \enquote{Stop force is decided}. After $\unit[30]{minutes}$, the \enquote{Acceleration is decided} mode is activated again and the car gains speed until the target reference velocity is reached, at which point the \enquote{Cruise is decided} mode is engaged once more. During control stops, the car's velocity is zero but the SoC increases, highlighting the benefits of these safety check-points as opportunities to recharge the battery.
+
+Overall, the driver demonstrates excellent tracking capabilities and makes appropriate decisions throughout the simulation.
+
+
+\subsection{Sensitivity Analysis}
+\label{sec:resultsSensitivityAnalysis}
+The second results obtained with the simulation is the sensitivity analysis of various crucial design parameters. The goal is to determine the extent to which each car parameter affects the overall racing time when it is increased by 1\% with respect to its actual value used in~\cref{chp:modeling}. Mathematically, this can be represented by the following relation:
+\begin{equation}
+	\frac{\partial f}{\partial z_n} \approx \frac{\Delta t_\mathrm{sim,tot}}{\Delta z_n}
+\end{equation}
+where $f$ is the function represented by the simulation as explained below in~\cref{eq:resultsSimFctTime}, $z_n$ is the n-th parameter, and $t_\mathrm{sim,tot}$ is the simulated time to complete the race. As previously mentioned in~\cref{chp:simulation}, the time period from sunset until sunrise is not simulated. Additionally, the local partial derivative is approximated by 1\% increase of the n parameters:
+\begin{equation}
+	\Delta z_n = 0.01 \cdot z_n \quad , \quad n \in \{1,...,12\}.
+\end{equation}
+Lastly, the simulation can be thought of as a function of the twelve design parameters of interest that outputs the simulated time:
+\begin{equation}
+	f(c_\mathrm{aero}, A_\mathrm{front}, ...) = t_\mathrm{sim,tot} \label{eq:resultsSimFctTime}
+\end{equation}
+and that the increase in racing time is found as
+\begin{equation}
+	\Delta t_\mathrm{sim,tot} = t_{\mathrm{sim,tot,}n} - t_\mathrm{sim,tot}
+\end{equation}
+where $t_{\mathrm{sim,tot,}n}$ is simulated time to finish the race when the n-th parameter is increased, and $t_\mathrm{sim,tot}$ is the base case where all parameters are as presented in~\cref{chp:modeling}.
+
+\Cref{fig:resultsSensitivityAnalysis} illustrates the results of the sensitivity analysis conducted as previously described.
+\begin{figure}[htbp]
+	\centering
+	\begin{externalize}{sensitivityAnalysis}
+		\input{img/sensitivityAnalysis/sensitivityAnalysis.tex}
+	\end{externalize}
+	\caption{Results of the sensitivity analysis obtained by increasing the values of the variables used in~\cref{chp:modeling} by 1\%.}
+	\label{fig:resultsSensitivityAnalysis}
+\end{figure}
+
+The plot clearly shows that the three aerodynamic parameters have the most significant contribution, represented by the same bar because they have the same impact. The second most influential factors are the motor and PV efficiency. The increase in the total mass, rolling friction coefficient and maximal battery capacity show similar absolute racing time increase. The wheel radius and the motor idle losses in the Willans model also have a notable impact.
+
+The influence of the battery resistance and open-circuit voltage is so small that no clear trend can be observed. In fact, their impact on the total duration of the race is minimal.
+
+It is important to note that this analysis is based on a 1\% increase in the current value of the parameters to enable a comparison, regardless of whether this change is truly applicable. Nevertheless, this analysis provides quantitative results that can be used to prioritize time and effort on areas that have the greatest potential to improve race outcomes.
+
+In general, this analysis can be conducted also by considering different weather conditions and driver parameters:
+\begin{equation}
+	f(\text{car parameters, weather data, driver coefficients}) = t_\mathrm{sim,tot}.
+\end{equation}
+
+
+\section{Optimized State-of-Charge Reference Profile}
+\label{sec:resultsStrategy}
+In this section, the SoC reference profile generated with the approach thoroughly explained in~\cref{chp:strategy} is presented and discussed.~\Cref{fig:resultsSoCref} shows the resulting SoC trajectory as a function of distance when both overnight and control stops are taken into account.
+\begin{figure}[htbp]
+	\centering
+	\begin{externalize}{resultsSoCsafe}
+		\input{img/resultsSoCsafe/resultsSoCsafe.tex}
+	\end{externalize}
+	\caption{Optimized SoC profile obtained in two iterations and by considering both overnight and control stops.}
+	\label{fig:resultsSoCref}
+\end{figure}
+
+The figure illustrates that the second iteration profile accurately accounts for the violation detected on the third overnight stop. It is worth mentioning that already a small change in velocity achieves this goal: $\overline{v}_\mathrm{tot,opt} = \unitfrac[106.1]{km}{h}$ and $\overline{v}_\mathrm{det} = \unitfrac[105.5]{km}{h}$. Additionally, the mean velocity of the segment to the right of the third night is not increased, as the recursive algorithm is not yet concluded. The expectation is that in this last segment, the car could drive as fast as allowed to use the maximum amount of energy, while still ensuring that the $x_\mathrm{SoC,min}$ is met at the end of the race.
+
+To effectively utilize these results in the \enquote{SoC$_\mathrm{ref}$ Estimator} of the Simulink simulation, further considerations and implementations are necessary. The assumptions made to obtain this profile may result in a deviation between the simulated and optimized profiles, particularly due to the spikes of recharge when stopping.
+
+Lastly, this method could be used for future iterations when new components are used, as everything is parametrized.
+
+
+

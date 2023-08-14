@@ -1,0 +1,3 @@
+img-ambientTemperature.pdf: img/ambientTemperature/ambientTemperature-1-x04-30.tsv
+img-ambientTemperature.pdf: img/ambientTemperature/ambientTemperature-2-x13-30.tsv
+img-ambientTemperature.pdf: img/ambientTemperature/ambientTemperature-3-x20-30.tsv

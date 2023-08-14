@@ -1,0 +1,44 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 10-Jan-2023 11:57:01.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+unbounded coords=jump,
+xmin=0,
+xmax=3000,
+xlabel style={font=\color{white!15!black}},
+xtick={0,500,1000,1500,2000,2500,3000},
+xticklabels={0,500,1000,1500,2000,2500,3000},
+xlabel={Distance / km},
+ymin=0,
+ymax=40,
+ylabel style={font=\color{white!15!black}},
+ylabel={Ambient Temperature / $\unit{\celsius}$},
+axis background/.style={fill=white},
+grid=both,
+legend pos=south west,
+legend cell align={left},
+legend style={draw=none},
+]
+\addplot [cyan, thick]
+  table[]{img/ambientTemperature/ambientTemperature-1-x04-30.tsv};
+\addlegendentry{04:30}
+
+\addplot [orange, thick]
+  table[]{img/ambientTemperature/ambientTemperature-2-x13-30.tsv};
+\addlegendentry{13:30}
+
+\addplot [black, thick]
+  table[]{img/ambientTemperature/ambientTemperature-3-x20-30.tsv};
+\addlegendentry{20:30}
+
+\end{axis}
+\end{tikzpicture}%

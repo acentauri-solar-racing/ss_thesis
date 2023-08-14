@@ -1,0 +1,5 @@
+img-intersectionStrategyUnitedStops.pdf: img/intersectionStrategyUnitedStops/intersectionStrategyUnitedStops-1.tsv
+img-intersectionStrategyUnitedStops.pdf: img/intersectionStrategyUnitedStops/intersectionStrategyUnitedStops-2.tsv
+img-intersectionStrategyUnitedStops.pdf: img/intersectionStrategyUnitedStops/intersectionStrategyUnitedStops-3.tsv
+img-intersectionStrategyUnitedStops.pdf: img/intersectionStrategyUnitedStops/intersectionStrategyUnitedStops-4.tsv
+img-intersectionStrategyUnitedStops.pdf: img/intersectionStrategyUnitedStops/intersectionStrategyUnitedStops-5.tsv

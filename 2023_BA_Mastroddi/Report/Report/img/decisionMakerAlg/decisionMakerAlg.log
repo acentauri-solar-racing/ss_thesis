@@ -1,0 +1,306 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.19)  2 JAN 2023 11:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./decisionMakerAlg.tex
+(decisionMakerAlg.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-11-02>
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{algorithmic}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.2 	\Require
+              $n \geq 0$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\Require $
+               n \geq 0$
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+! Undefined control sequence.
+l.3 	\Ensure
+             $y = x^n$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 	\State
+            $y \gets 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 	\State
+            $X \gets x$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 	\State
+            $N \gets n$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (36.55786pt too wide) in paragraph at lines 2--7
+[]$\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 2--7
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (11.1586pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 x[]$
+ []
+
+
+Overfull \hbox (18.03932pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 2--7
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (21.84715pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 x$
+ []
+
+
+Overfull \hbox (21.9027pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 2--7
+\OML/cmm/m/it/10 n$ 
+ []
+
+! Undefined control sequence.
+l.8 	\If
+        {$"Time stop is needed"$}  %\Comment{Deceleration}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 	\If{$
+          "Time stop is needed"$}  %\Comment{Deceleration}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.10 	\State
+             $X \gets X \times X$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 	\State
+             $N \gets \frac{N}{2}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 	\ElsIf
+            {$N$ is odd}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.14 	\State
+             $y \gets y \times X$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 	\State
+             $N \gets N - 1$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 	\EndIf
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (110.80481pt too wide) in paragraph at lines 8--17
+[]$\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Timestopisneeded\OT1/cmr/m/n/10 "$
+ []
+
+
+Overfull \hbox (21.84715pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (16.84723pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 X$
+ []
+
+
+Overfull \hbox (21.9027pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (9.48473pt too wide) in paragraph at lines 8--17
+[]$
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 N$
+ []
+
+
+Overfull \hbox (18.03932pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (13.0394pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 X$
+ []
+
+
+Overfull \hbox (21.9027pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (16.90277pt too wide) in paragraph at lines 8--17
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 8--17
+\OT1/cmr/m/n/10 1$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{algorithmic}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./decisionMakerAlg.tex
+                          
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 475281
+ 619 string characters out of 2774064
+ 342677 words of memory out of 3000000
+ 21606 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,2n,12p,109b,61s stack positions out of 10000i,1000n,20000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,4 @@
+img-resultsSoCsafe.pdf: img/resultsSoCsafe/resultsSoCsafe-1.tsv
+img-resultsSoCsafe.pdf: img/resultsSoCsafe/resultsSoCsafe-2.tsv
+img-resultsSoCsafe.pdf: img/resultsSoCsafe/resultsSoCsafe-4.tsv
+img-resultsSoCsafe.pdf: img/resultsSoCsafe/resultsSoCsafe-5.tsv

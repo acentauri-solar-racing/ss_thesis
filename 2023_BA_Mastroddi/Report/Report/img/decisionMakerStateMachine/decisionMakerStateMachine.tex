@@ -1,0 +1,15 @@
+\begin{tikzpicture}[node distance=5cm, >=stealth',
+	every state/.style={circle, minimum size=3cm, thick, draw=black, fill=gray!20!white}]
+	\node[state, initial, text width=2 cm, align=center] (acc) {Acceleration is decided};
+	\node[state] (cruise) [right of=acc, text width=2 cm, align=center] {Cruise is decided};
+	\node[state] (dec) [below of=cruise, text width=2 cm, align=center] {Deceleration is decided};
+	\node[state] (stop) [left of=dec, text width=2 cm, align=center] {Stop force is decided};
+	\path[->] (acc) edge [loop above] node {$\textbf{if } v < \min(v_\mathrm{max}, v_\mathrm{ref})$} (acc);
+	\path[->] (acc) edge [bend left] node[above] {\textbf{else}} (cruise);
+	\path[->] (cruise) edge [loop right] node {\textbf{else}} (cruise);
+	\path[->] (cruise) edge [bend left] node[right] {$\textbf{if } d_\mathrm{s} \geq d_\mathrm{ns} \textbf{ or } t_\mathrm{s} \geq t_\mathrm{ns}$} (dec);
+	\path[->] (dec) edge [loop right] node {$\textbf{if } v > 0$} (dec);
+	\path[->] (dec) edge [bend left] node[below] {\textbf{else}} (stop);
+	\path[->] (stop) edge [loop left] node {\textbf{else}} (stop);
+	\path[->] (stop) edge [bend left] node[left, text width=4.5 cm] {\textbf{if} \enquote{Racing day is started} \\ \textbf{or} \enquote{Control stop is over}} (acc);
+\end{tikzpicture}

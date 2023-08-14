@@ -1,0 +1,34 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 28-Dec-2022 21:48:38.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+xmin=0,
+xmax=131340,
+%xlabel style={font=\color{white!15!black}},
+xtick={0,32500,82000,131340},
+xticklabels={0,32500,82000,131340},
+xlabel={Simulation time / s},
+ymin=0,
+ymax=1200,
+%ylabel style={font=\color{white!15!black}},
+ytick={0,300,600,900,1200},
+yticklabels={0,300,600,900,1200},
+ylabel={Global irradiance / $\unitfrac{W}{m^2}$},
+axis background/.style={fill=white},
+grid=both,
+scaled x ticks = false,
+x tick label style={/pgf/number format/fixed},
+]
+\addplot [color=black, forget plot]
+  table[]{img/irradianceSimulation2020/irradianceSimulation2020-1.tsv};
+\end{axis}
+\end{tikzpicture}%

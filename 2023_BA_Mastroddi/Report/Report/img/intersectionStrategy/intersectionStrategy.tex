@@ -1,0 +1,43 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 03-Jan-2023 22:14:09.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+unbounded coords=jump,
+xmin=0,
+xmax=40,
+xlabel style={font=\color{white!15!black}},
+xlabel={Driving time / h},
+ymin=0,
+ymax=40,
+ylabel style={font=\color{white!15!black}},
+ylabel={Energy / kWh},
+axis background/.style={fill=white},
+grid=both,
+legend pos=north west,
+legend cell align={left},
+legend style={draw=none},
+]
+\addplot [color=black, thick]
+  table[]{img/intersectionStrategy/intersectionStrategy-1.tsv};
+  \addlegendentry{Energy budget}
+\addplot [color=blue, thick]
+  table[]{img/intersectionStrategy/intersectionStrategy-2.tsv};
+  \addlegendentry{Energy loss}
+\addplot [color=red, dashed, thick, forget plot]
+  table[]{img/intersectionStrategy/intersectionStrategy-3.tsv};
+\addplot [color=red, only marks, mark size=2pt, mark=*, mark options={solid, red}, forget plot]
+  table[]{img/intersectionStrategy/intersectionStrategy-4.tsv};
+\node[red, fill=white] at (axis cs: 32.5,5) {$t_\mathrm{driv}^*$};
+\addplot [color=black, forget plot]
+  table[]{img/intersectionStrategy/intersectionStrategy-5.tsv};
+\end{axis}
+\end{tikzpicture}%

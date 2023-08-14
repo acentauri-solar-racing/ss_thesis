@@ -1,0 +1,32 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 20-Dec-2022 09:12:11.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+xmin=0,
+xmax=7080,
+%xlabel style={font=\color{white!15!black}},
+xtick={0,1400,2850,4280,5720},
+xticklabels={Oct 20,Oct 21,Oct 22,Oct 23,Oct 24},
+xlabel={Time / days},
+ymin=0,
+ymax=1200,
+%ylabel style={font=\color{white!15!black}},
+ytick={0,300,600,900,1200},
+yticklabels={0,300,600,900,1200},
+ylabel={Global irradiance / $\unitfrac{W}{m^2}$},
+axis background/.style={fill=white},
+grid=both
+]
+\addplot [color=black, forget plot]
+  table[]{img/irradianceRace2020/irradianceRace2020-1.tsv};
+\end{axis}
+\end{tikzpicture}%

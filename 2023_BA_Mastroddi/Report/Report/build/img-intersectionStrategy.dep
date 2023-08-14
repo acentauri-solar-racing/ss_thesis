@@ -1,0 +1,5 @@
+img-intersectionStrategy.pdf: img/intersectionStrategy/intersectionStrategy-1.tsv
+img-intersectionStrategy.pdf: img/intersectionStrategy/intersectionStrategy-2.tsv
+img-intersectionStrategy.pdf: img/intersectionStrategy/intersectionStrategy-3.tsv
+img-intersectionStrategy.pdf: img/intersectionStrategy/intersectionStrategy-4.tsv
+img-intersectionStrategy.pdf: img/intersectionStrategy/intersectionStrategy-5.tsv

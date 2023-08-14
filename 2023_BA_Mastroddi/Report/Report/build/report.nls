@@ -1,0 +1,96 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{\vphantom {a}$\beta $, $\theta $}]\begingroup Angles\nomunit {°}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {A}$A$}]\begingroup Area\nomunit {\unit {m$^2$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {a}$a$}]\begingroup Acceleration\nomunit {\unitfrac {m}{s$^2$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}$\nu $, $\kappa $, $\Delta \vartheta $}]\begingroup Modeling coefficients\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}$c$}]\begingroup Friction coefficient\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}$I$}]\begingroup Current\nomunit {\unit {A}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}$p$, $q$, $u$}]\begingroup Strategy coefficients\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {C}$Q$}]\begingroup Charge\nomunit {\unit {C}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {d}$\rho $}]\begingroup Density\nomunit {\unitfrac {kg}{m$^3$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {d}$d$}]\begingroup Distance\nomunit {\unit {m}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {E}$\tilde {E}$}]\begingroup Energy approximation\nomunit {\unit {J}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {E}$E$}]\begingroup Energy\nomunit {\unit {J}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {e}$e$, $\eta $}]\begingroup Efficiency\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {F}$F$}]\begingroup Force\nomunit {\unit {N}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {f}$f$}]\begingroup Function\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {G}$G$}]\begingroup Global irradiance\nomunit {\unitfrac {W}{m$^2$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {g}$g$}]\begingroup Gravitational acceleration\nomunit {\unitfrac [9.81]{m}{s$^2$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {h}$h$}]\begingroup Height\nomunit {\unit {m}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {i}$\alpha $}]\begingroup Inclination\nomunit {\unit {\degree }}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {M}$\Theta $}]\begingroup Moment of inertia\nomunit {\unit {kg$\,$m$^2$}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {m}$m$}]\begingroup Mass\nomunit {\unit {kg}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {N}$N$}]\begingroup Number of ...\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {P}$\lambda $}]\begingroup Power loss coefficient\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {P}$P$}]\begingroup Power\nomunit {\unit {W}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {r}$\Delta $}]\begingroup Root\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {R}$R$}]\begingroup Resistance\nomunit {\unit {$\Omega $}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {r}$r$}]\begingroup Radius\nomunit {\unit {m}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {t}$\gamma $}]\begingroup Transmission ratio\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {T}$\vartheta $}]\begingroup Temperature\nomunit {\unit {\celsius }}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {T}$T$}]\begingroup Torque\nomunit {\unit {N$\,$m}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {t}$t$}]\begingroup Time\nomunit {\unit {s}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {t}$t^*$}]\begingroup Minimal time\nomunit {\unit {s}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {v}$\omega $}]\begingroup Angular velocity\nomunit {\unitfrac {1}{s}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {v}$\overline {v}$}]\begingroup Mean velocity\nomunit {\unitfrac {m}{s}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {V}$V$}]\begingroup Voltage\nomunit {\unit {V}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {v}$v$}]\begingroup Velocity\nomunit {\unitfrac {m}{s}}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {x}$x$}]\begingroup Fraction\nomunit {--}\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {z}$z$}]\begingroup Parameter for the sensitivity analysis\nomunit {--}\nomeqref {0}\nompageref{1}
+\nomgroup{B}
+  \item [{\vphantom {a}acc}]\begingroup Acceleration\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {a}aero}]\begingroup Aerodynamic\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {a}amb}]\begingroup Ambient\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {b}bat}]\begingroup Battery\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {b}bear}]\begingroup Bearing\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {b}budg}]\begingroup Budget\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {b}lo}]\begingroup Lower bound\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {b}up}]\begingroup Upper bound\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}CF}]\begingroup Correcting factor\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {c}coul}]\begingroup Coulombic\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {d}dec}]\begingroup Deceleration\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {d}det}]\begingroup Detection\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {d}driv}]\begingroup Driving\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {e}eff}]\begingroup Effective\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {e}el}]\begingroup Electrical\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {g}gb}]\begingroup Gear box\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {g}grav}]\begingroup Gravitational\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {i}$i$, $n$}]\begingroup Indices\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {i}ineff}]\begingroup Inefficiency\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {m}max}]\begingroup Maximal\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {m}mec}]\begingroup Mechanical\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {m}min}]\begingroup Minimal\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {m}mot}]\begingroup Electric Motor\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {n}ns}]\begingroup Next stop\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {o}oc}]\begingroup Open circuit\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {o}opt}]\begingroup Optimal\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {p}pot}]\begingroup Potential\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {r}ref}]\begingroup Reference\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {r}roll}]\begingroup Rolling\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {r}rot}]\begingroup Rotational\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {s}s}]\begingroup Stop\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {s}sim}]\begingroup Simulation\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {s}sol}]\begingroup Solar\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {s}STC}]\begingroup Standard condition\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {t}tot}]\begingroup Total\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {t}trac}]\begingroup Traction\nomeqref {0}\nompageref{1}
+  \item [{\vphantom {w}w}]\begingroup Wheel\nomeqref {0}\nompageref{1}
+\nomgroup{D}
+  \item [{ARW}]\begingroup Anti-reset windup\nomeqref {0}\nompageref{1}
+  \item [{BWSC}]\begingroup Bridgestone World Solar Challenge\nomeqref {0}\nompageref{1}
+  \item [{D-ITET}]\begingroup Departement Informationstechnologie und Elektrotechnik\nomeqref {0}\nompageref{1}
+  \item [{D-MAVT}]\begingroup Departement Maschinenbau und Verfahrenstechnik\nomeqref {0}\nompageref{1}
+  \item [{ETH}]\begingroup Eidgen\"{o}ssische Technische Hochschule\nomeqref {0}\nompageref{1}
+  \item [{IDSC}]\begingroup Institute for Dynamic Systems and Control\nomeqref {0}\nompageref{1}
+  \item [{LVD}]\begingroup Longitudinal vehicle dynamics\nomeqref {0}\nompageref{1}
+  \item [{MOI}]\begingroup Moment of inertia\nomeqref {0}\nompageref{1}
+  \item [{MPPT}]\begingroup Maximum power point tracking\nomeqref {0}\nompageref{1}
+  \item [{NaN}]\begingroup Not a number\nomeqref {0}\nompageref{1}
+  \item [{PI}]\begingroup Proportional integral\nomeqref {0}\nompageref{1}
+  \item [{PV}]\begingroup Photovoltaic\nomeqref {0}\nompageref{1}
+  \item [{SoC}]\begingroup State of charge\nomeqref {0}\nompageref{1}
+  \item [{SoE}]\begingroup State of energy\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

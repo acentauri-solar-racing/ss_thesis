@@ -1,0 +1,78 @@
+% Styles
+\tikzset{
+	midBlock/.style = {rectangle, thick, minimum width=2cm, minimum height=2cm,text centered, text width=2cm, draw=black, fill=white},
+	arrow/.style= {thick, black, ->, >=stealth},
+	line/.style= {thick, black},
+	textOutput/.style = {black,right},
+	textInput/.style = {black,left},
+	container/.style = {gray,dashed},
+	sum/.style = {circle, minimum size=0.7cm, thick, draw=black, fill=white},
+	%sum
+	charge node/.style={inner sep=0pt},
+	pics/sum block/.style n args={4}{
+		code={
+			\path node (n) [draw, circle, inner sep=0pt, minimum size=0.7cm] {}
+			(n.north) +(0,-1.5mm) node [charge node] {$#1$}
+			(n.south) +(0,1.5mm) node [charge node] {$#2$}
+			(n.west) +(1.5mm,0) node [charge node] {$#3$}
+			(n.east) +(-1.5mm,0) node [charge node] {$#4$}
+			;
+		}
+	}
+}
+\begin{tikzpicture}
+	% Definition
+	%for three arrows
+	\def\up{0.5}
+	\def\down{-\up}
+	\def\right{0.5}
+	\def\left{-\right}
+	%radius
+	\def\radius{0.07}
+	
+	% Blocks
+	\matrix[column sep=1.4cm, row sep=1cm]{
+		%first row
+		& & & \coordinate (c14); & &  \coordinate (c16); & & & &
+		\\
+		%second row
+		\coordinate (c21); & \node[midBlock] (SoCref) {SoC$_\mathrm{ref}(d)$ \\ Estimator}; & \node[sum] (sumSoC) {}; & \node[midBlock] (Cslow) {PI$_\mathrm{slow}$}; & \node[sum] (sumVel) {}; &  \node[midBlock] (Cfast) {PI$_\mathrm{fast}$}; & \node[midBlock] (plant) {Plant}; & \coordinate (c28); & \coordinate (c29); &
+		\\
+		%third row
+		& & & & \coordinate (c35); &  & & \coordinate (c38); & &
+		\\
+		%fourth row
+		& & \coordinate (c43); & & &  & & \coordinate (c48); & &
+		\\
+	};
+	
+	% Arrows;
+	%horizontal
+	\draw[arrow] (c21) node[textInput] {$d$} -- (SoCref);
+	\draw[arrow] (SoCref) -- (sumSoC) node[midway, above] {$x_\mathrm{SoC,ref}$};
+	\draw[arrow] (sumSoC) -- (Cslow);
+	\draw[arrow] (Cslow) -- (sumVel) node[midway, above] {$v_\mathrm{ref}$};
+	\draw[arrow] (sumVel) -- (Cfast);
+	\draw[arrow] (Cfast) -- (plant) node[midway, above] {$F_\mathrm{trac,req}$};
+	\draw[arrow] ([yshift=\up cm]plant.east) -- ([yshift=\up cm]c29) node[textOutput] {$x_\mathrm{SoC}$};
+	\draw[arrow] ([yshift=\down cm]plant.east) -- ([yshift=\down cm]c29) node[textOutput] {$v$};
+	\draw[line] ([xshift=\left cm]c38) -- (c35);
+	\draw[line] ([xshift=\right cm]c48) -- (c43);
+	%vertical
+	\draw[line] ([xshift=\left cm, yshift=\down cm]c28) -- ([xshift=\left cm]c38);
+	\draw[line] ([xshift=\right cm, yshift=\up cm]c28) -- ([xshift=\right cm]c48);
+	\draw[arrow] (c35) -- (sumVel);
+	\draw[arrow] (c43) -- (sumSoC);
+	\draw[arrow] (c16) node[textInput,above] {$F_\mathrm{trac,lim}$} -- (Cfast);
+	\draw[arrow] ([xshift=\left cm]c14) node[textInput,above] {$v_\mathrm{up}$} -- ([xshift=\left cm]Cslow.north);
+	\draw[arrow] ([xshift=\right cm]c14) node[textInput,above] {$v_\mathrm{lo}$} -- ([xshift=\right cm]Cslow.north);
+	
+	% Dots
+	\fill [black] ([xshift=\left cm, yshift=\down cm]c28) circle (\radius cm);
+	\fill [black] ([xshift=\right cm, yshift=\up cm]c28) circle (\radius cm);
+	
+	%sum
+	\path pic at (sumSoC) {sum block={}{-}{+}{}};
+	\path pic at (sumVel) {sum block={}{-}{+}{}};
+	
+\end{tikzpicture}

@@ -1,0 +1,3 @@
+img-SoCstrategy.pdf: img/SoCstrategy/SoCstrategy-1.tsv
+img-SoCstrategy.pdf: img/SoCstrategy/SoCstrategy-2.tsv
+img-SoCstrategy.pdf: img/SoCstrategy/SoCstrategy-3.tsv

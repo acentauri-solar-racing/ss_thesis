@@ -1,0 +1,72 @@
+\contentsline {chapter}{\nonumberline Nomenclature}{vii}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Bridgestone World Solar Challenge}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Alpha Centauri Team}{1}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Motivation}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objective}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}State of the Research}{2}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Modeling}{3}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Optimization of the Race Strategy}{3}{subsection.1.4.2}%
+\contentsline {paragraph}{Long-Term}{3}{section*.6}%
+\contentsline {paragraph}{Mid-Term}{3}{section*.7}%
+\contentsline {paragraph}{Short-Term}{3}{section*.8}%
+\contentsline {section}{\numberline {1.5}Structure of the Report}{4}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Modeling}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Vehicle}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Longitudinal Vehicle Dynamics}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Electric Motor}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Photovoltaic Module}{8}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Battery Pack}{9}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Power Balance}{10}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Route on Stuart Highway}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Longitude, Latitude, and Distance}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Altitude}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inclination}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Speed Limit}{12}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Meteorological Conditions}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Solar Global Irradiance}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Ambient Temperature}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Wind Speed}{14}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Official Rules}{15}{section.2.4}%
+\contentsline {paragraph}{Time domain}{15}{section*.25}%
+\contentsline {paragraph}{Space domain}{15}{section*.26}%
+\contentsline {paragraph}{General}{15}{section*.27}%
+\contentsline {chapter}{\numberline {3}Simulation of the Bridgestone World Solar Challenge}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Preparation}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Plant}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Longitudinal Vehicle Dynamics}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Electric Motor}{21}{subsection.3.2.2}%
+\contentsline {paragraph}{Bounds Calculator}{21}{section*.34}%
+\contentsline {paragraph}{Motor}{21}{section*.35}%
+\contentsline {subsection}{\numberline {3.2.3}PV Module}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Battery Pack}{22}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Weather}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Driver}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Decision Maker}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Controllers}{27}{subsection.3.4.2}%
+\contentsline {paragraph}{Acceleration and Deceleration}{27}{section*.45}%
+\contentsline {paragraph}{Cruise}{27}{section*.46}%
+\contentsline {chapter}{\numberline {4}Energy Usage Optimization and Long-Term Strategy}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}General Concept}{31}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Time Domain}{32}{subsection.4.1.1}%
+\contentsline {paragraph}{Energy Budget}{32}{section*.51}%
+\contentsline {paragraph}{Energy Loss}{33}{section*.52}%
+\contentsline {subsection}{\numberline {4.1.2}Space Domain}{34}{subsection.4.1.2}%
+\contentsline {paragraph}{Battery Energy}{34}{section*.54}%
+\contentsline {section}{\numberline {4.2}Practical Considerations}{35}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Intersection During Overnight Stop}{35}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Overlapping Stops}{35}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Lower Bound Violation}{35}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Energy Optimization After Corrected Worst Violation}{37}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Recursive Algorithm}{38}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Results and Discussion}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Simulation}{41}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Driver Behavior}{41}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Sensitivity Analysis}{43}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Optimized State-of-Charge Reference Profile}{44}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Modeling}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Simulation}{46}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Strategy}{46}{section.6.3}%
+\contentsline {chapter}{Bibliography}{49}{chapter*.64}%

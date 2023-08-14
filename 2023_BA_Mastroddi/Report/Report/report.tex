@@ -1,0 +1,70 @@
+% !TeX document-id = {e80440e9-2c39-426b-b0d1-0464bd71fc88}
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+% !TeX TXS-program:compile = txs:///latexmk/[-pdf -silent -shell-escape -latexoption="-synctex=1" -output-directory="build" -r "docstyle/nomenclature_latexmkrc"]
+% !TeX TXS-program:quick = txs:///compile | txs:///view
+
+% Workaround for bug, see https://tex.stackexchange.com/questions/575325/options-not-working-if-custom-class-is-in-subfolder
+\makeatletter\def\input@path{{./docstyle/}}\makeatother
+
+\documentclass[bt]{IDSCreport}
+
+\title{Simulation Implementation and Strategy Planning for the Bridgestone World Solar Challenge}
+\subtitle{}
+\author{Giacomo Mastroddi}
+\ethid{19-914-449}
+\semester{HS 2022}
+\email{giacomma@student.ethz.ch}
+\supervision{Fabio Widmer\\ Prof. Dr. C. Onder}
+\identification{IDSC-CO-FW-24}
+\date{\today}
+\keywords{Bridgestone World Solar Challenge, Alpha Centauri, Solar Car Modeling, Simulink Simulation, Long-Term Strategy Planning}
+\bibliography{bibliography}
+
+%---packages---
+\usepackage{tikz}
+\usetikzlibrary{angles,arrows,calc,intersections,positioning,patterns,backgrounds,shapes,fit,automata,positioning,chains,quotes}
+\usepgfplotslibrary{groupplots,polar}
+\usepackage{varwidth}
+\usepackage{tkz-euclide}
+\usepackage{circuitikz}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{cleveref}
+\usepackage{rotating}
+\usepackage{multirow}
+%---end packages---
+
+%---commands---
+% Externalize the creation of pgfplots such that they are only compiled when needed.
+\usepgfplotslibrary{external}
+\tikzexternalize
+\tikzset{
+	external/system call={pdflatex \tikzexternalcheckshellescape --halt-on-error --interaction=batchmode --output-directory=./build --jobname "\image" "\texsource"},
+	/pgf/images/include external/.code={\includegraphics{build/#1}}
+}
+
+\tikzexternaldisable % Disable automatic externalization --> enable using the externalizableTikz environment below.
+
+% Environment for externalizable tikz. The argument defines the name of the generated PDF file.
+\newenvironment{externalize}[1]{
+	\tikzexternalenable % Enable within this environment
+	\tikzsetnextfilename{img-#1} % Set name of resulting file(s)
+}{}
+%---end commands---
+
+\input{chapters/abstract}
+\input{chapters/acknowledgment}
+
+\begin{document}
+\input{chapters/nomenclature}
+\input{chapters/introduction}
+\input{chapters/modeling}
+\input{chapters/simulation}
+\input{chapters/strategy}
+\input{chapters/results}
+\input{chapters/conclusion}
+%\appendix
+%\input{chapters/appendix}
+\end{document}

@@ -1,0 +1,32 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 19-Dec-2022 17:23:11.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.9\textwidth,
+height=0.5\textwidth,
+%bar shift auto,
+xmin=-6.5,
+xmax=6.5,
+xlabel style={font=\color{white!15!black}},
+xlabel={Racing time increase / min},
+ymin=-0.2,
+ymax=11.2,
+ytick={1,2,3,4,5,6,7,8,9,10},
+yticklabels={{$e_\mathrm{mot}$},{$\eta_\mathrm{PV}$},{$Q_\mathrm{bat,max}$},{$r_\mathrm{w}$},{$U_\mathrm{bat,oc}$},{$R_\mathrm{bat}$},{$P_0$},{$c_\mathrm{roll}$},{$m_\mathrm{tot}$},{$c_\mathrm{aero}$, $A_\mathrm{front}$, $\rho_\mathrm{air}$}},
+axis background/.style={fill=white},
+grid=both,
+]
+\addplot[xbar, bar width=0.6, fill=white!30!orange, draw=black, area legend, 
+nodes near coords,
+node near coord style={fill=white, fill opacity=1},
+] table[] {img/sensitivityAnalysis/sensitivityAnalysis-1.tsv};
+%\addplot[forget plot, color=white!15!black] table[] {img/sensitivityAnalysis/sensitivityAnalysis-2.tsv};
+\end{axis}
+\end{tikzpicture}%

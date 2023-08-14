@@ -1,0 +1,40 @@
+% Styles
+\tikzstyle{variables} = [rectangle, rounded corners, text centered, text width=3.8cm, draw=black, fill=white]
+\tikzstyle{function} = [rectangle, minimum width=4cm, minimum height=1.5cm, text centered, text width=4cm, draw=black, fill=gray!20!white]
+\tikzstyle{decision} = [diamond, aspect=2, inner xsep=0mm, text centered, text width=2cm, draw=black, fill=white]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+	
+\begin{tikzpicture}[node distance=2.5cm]
+	% Definition
+	\def\right{3}
+	\def\left{-\right}
+	\def\Nright{1.5}
+	\def\Nleft{-\right}
+	
+	% Blocks
+	\node (start) [] {};
+	\node (inputVar) [variables, below of=start] {$d_\mathrm{start} = 0$ \\ $t_\mathrm{start} = 0$ \\ $x_\mathrm{SoC,start} = x_\mathrm{SoC,max}$ \\ $d_\mathrm{target} = d_\mathrm{tot}$ \\ $t_\mathrm{target} = \mathrm{NaN}$};
+	\node (velFinder) [function, below of=inputVar] {Velocity Finder};
+	\node (zero2detVar) [variables, left of=velFinder, xshift=\left cm] {$d_\mathrm{start} = 0$ \\ $t_\mathrm{start} = 0$ \\ $x_\mathrm{SoC,start} = x_\mathrm{SoC,max}$ \\ $d_\mathrm{target} = \mathrm{NaN}$ \\ $t_\mathrm{target} = t_\mathrm{driv,det}$};
+	\node (det2endVar) [variables, right of=velFinder, xshift=\right cm] {$d_\mathrm{start} = d_\mathrm{det}$ \\ $t_\mathrm{start} = t_\mathrm{driv,det}$ \\ $x_\mathrm{SoC,start} = x_\mathrm{SoC,det}$ \\ $d_\mathrm{target} = d_\mathrm{tot}$ \\ $t_\mathrm{target} = \mathrm{NaN}$};
+	\node (overCorr) [function, below of=velFinder] {Overlaps Corrector};
+	\node (violDet) [function, below of=overCorr] {Violation Detector};
+	\node (violIsDet) [decision, below of=violDet] {Violation \\ is detected?};
+	\node (worstDetFinder) [function, below of=violIsDet] {Worst Violation Finder};
+	\node (SoCgen) [function, below of=worstDetFinder] {SoC Generator};
+	\node (SoCref) [below of=SoCgen] {};
+	
+	% Arrows
+	\draw [arrow] (start) node[above] {start} -- (inputVar);
+	\draw [arrow] (inputVar) -- (velFinder);
+	\draw [arrow] (zero2detVar) -- (velFinder);
+	\draw [arrow] (det2endVar) -- (velFinder);
+	\draw [arrow] (velFinder) -- (overCorr);
+	\draw [arrow] (overCorr) -- (violDet);
+	\draw [arrow] (violDet) -- (violIsDet);
+	\draw [arrow] (violIsDet) -- node[anchor=west] {yes} (worstDetFinder);
+	\draw [arrow] (violIsDet.east) to["no" '] + (1,0) |-  (SoCgen.east);
+	\draw [arrow] (worstDetFinder) -| (zero2detVar) node[midway, below, text width=3cm] {1. Solve left part \\ until violation};
+	\draw [arrow] (worstDetFinder) -| (det2endVar) node[midway, below, text width=3cm] {2. Solve right part \\ after violation};
+	\draw [arrow] (SoCgen) -- (SoCref) node[below] {$x_\mathrm{SoC,ref}$};
+\end{tikzpicture}

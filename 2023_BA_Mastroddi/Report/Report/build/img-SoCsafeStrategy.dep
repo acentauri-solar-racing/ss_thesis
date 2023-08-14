@@ -1,0 +1,3 @@
+img-SoCsafeStrategy.pdf: img/SoCsafeStrategy/SoCsafeStrategy-1.tsv
+img-SoCsafeStrategy.pdf: img/SoCsafeStrategy/SoCsafeStrategy-2.tsv
+img-SoCsafeStrategy.pdf: img/SoCsafeStrategy/SoCsafeStrategy-3.tsv

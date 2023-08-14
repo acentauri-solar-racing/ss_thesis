@@ -1,0 +1,32 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 22-Dec-2022 21:10:56.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+xmin=0,
+xmax=3000,
+%xlabel style={font=\color{white!15!black}},
+xtick={0,500,1000,1500,2000,2500,3000},
+xticklabels={0,500,1000,1500,2000,2500,3000},
+xlabel={Distance / km},
+ymin=-3,
+ymax=3,
+%ylabel style={font=\color{white!15!black}},
+ytick={-3,-2,-1,0,1,2,3},
+yticklabels={-3,-2,-1,0,1,2,3},
+ylabel={Inclination / °},
+axis background/.style={fill=white},
+grid=both,
+]
+\addplot [color=black, forget plot]
+  table[]{img/inclination/inclination-1.tsv};
+\end{axis}
+\end{tikzpicture}%

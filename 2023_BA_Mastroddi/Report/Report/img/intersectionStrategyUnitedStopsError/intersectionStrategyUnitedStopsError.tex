@@ -1,0 +1,43 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+%This file has been created via figure2tikz on 10-Jan-2023 18:31:39.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=\textwidth,
+height=0.3\textwidth,
+unbounded coords=jump,
+xmin=23,
+xmax=34,
+xlabel style={font=\color{white!15!black}},
+xlabel={Driving time / h},
+ymin=25,
+ymax=35,
+ylabel style={font=\color{white!15!black}},
+ylabel={Energy / kWh},
+axis background/.style={fill=white},
+grid=both,
+legend pos=north west,
+legend cell align={left},
+legend style={draw=none},
+]
+\addplot [color=black, thick]
+  table[]{img/intersectionStrategyUnitedStopsError/intersectionStrategyUnitedStopsError-1.tsv};
+  \addlegendentry{Energy budget}
+\addplot [color=blue, thick]
+  table[]{img/intersectionStrategyUnitedStopsError/intersectionStrategyUnitedStopsError-2.tsv};
+  \addlegendentry{Energy loss}
+\addplot [color=red, only marks, mark size=1.7pt, mark=*, mark options={solid, red}, forget plot]
+  table[]{img/intersectionStrategyUnitedStopsError/intersectionStrategyUnitedStopsError-4.tsv};
+\addplot [color=black, thick, forget plot]
+  table[]{img/intersectionStrategyUnitedStopsError/intersectionStrategyUnitedStopsError-5.tsv};
+\addplot [color=red, dashed, thick, forget plot]
+  table[]{img/intersectionStrategyUnitedStopsError/intersectionStrategyUnitedStopsError-3.tsv};
+\node[red, fill=white] at (axis cs: 30,26.5) {$t_\mathrm{driv}^*$};
+\end{axis}
+\end{tikzpicture}%

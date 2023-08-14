@@ -1,0 +1,48 @@
+\pgfplotsset{
+	polar bar/.style={
+		scatter,
+		draw=none,
+		mark=none,
+		visualization depends on=rawy\as\rawy,
+		area legend,
+		legend image code/.code={%
+			\fill[##1] (0cm,-0.1cm) rectangle (0.6cm,0.1cm);
+		},
+		/pgfplots/scatter/@post marker code/.add code={}{
+			\pgfmathveclen{\pgf@x}{\pgf@y}
+			\edef\radius{\pgfmathresult}
+			\fill[]
+			(\pgfkeysvalueof{/data point/x},-\pgfkeysvalueof{/data point/y})
+			++({\pgfkeysvalueof{/data point/x}-#1/2},\pgfkeysvalueof{/data point/y})
+			arc [start angle=\pgfkeysvalueof{/data point/x}-#1/2,
+			delta angle=#1,
+			radius={\radius pt}
+			]
+			-- +({\pgfkeysvalueof{/data point/x}+#1/2},-\rawy)
+			arc [start angle=\pgfkeysvalueof{/data point/x}+#1/2,
+			delta angle=-#1,
+			radius={
+				(\pgfkeysvalueof{/data point/y} - \rawy) / \pgfkeysvalueof{/data point/y} * \radius pt
+			}
+			]
+			--cycle;
+		}
+	},
+	polar bar/.default=30
+}
+
+\begin{tikzpicture}
+	\begin{polaraxis}[
+		xtick={0,45,...,315},
+%		xticklabels={E,NE,N,NW,W,SW,S,SE},
+		ytick=\empty,
+%		legend entries={0 to 0.5, 0.5 to 2, 2 to 4, 4 to 6},
+%		cycle list={cyan!20, cyan!50, cyan, cyan!50!black, cyan!20!black},
+%		legend pos=outer north east
+		]
+%		\pgfplotsinvokeforeach{1,...,6}{
+%			\addplot +[polar bar=17, stack plots=y]
+%			table [x expr=-\thisrowno{0}+90, y index=#1] {frequencies.csv};
+%		}
+	\end{polaraxis}
+\end{tikzpicture}
