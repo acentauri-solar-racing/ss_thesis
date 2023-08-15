@@ -1,3 +1,5 @@
+# to update with Pascal
+
 from can-msg-api.db.db_service import DbService
 
-DbService.query(vel, num_entries=1)
+velocity = DbService.query(load_speed, num_entries=1)
