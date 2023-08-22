@@ -22,7 +22,7 @@ end % for
 route.incl(isnan(route.incl)) = 0; %remove NaN
 
 %insert max speed
-roadInfo = readmatrix("RouteMerged.csv");
+roadInfo = readmatrix("Route.csv");
 route.maxSpeed = roadInfo(:,6) / 3.6; %m/s
 route.roadType = roadInfo(:,7);
 
