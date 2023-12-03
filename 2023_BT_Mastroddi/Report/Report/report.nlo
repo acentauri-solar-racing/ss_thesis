@@ -1,0 +1,89 @@
+\nomenclatureentry{A\vphantom {P}$P$@[{\vphantom {P}$P$}]\begingroup Power\nomunit {\unit {W}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {m}$m$@[{\vphantom {m}$m$}]\begingroup Mass\nomunit {\unit {kg}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {v}$v$@[{\vphantom {v}$v$}]\begingroup Velocity\nomunit {\unitfrac {m}{s}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {F}$F$@[{\vphantom {F}$F$}]\begingroup Force\nomunit {\unit {N}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {d}$\rho $@[{\vphantom {d}$\rho $}]\begingroup Density\nomunit {\unitfrac {kg}{m$^3$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {A}$A$@[{\vphantom {A}$A$}]\begingroup Area\nomunit {\unit {m$^2$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {c}$c$@[{\vphantom {c}$c$}]\begingroup Friction coefficient\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {g}$g$@[{\vphantom {g}$g$}]\begingroup Gravitational acceleration\nomunit {\unitfrac [9.81]{m}{s$^2$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {r}$r$@[{\vphantom {r}$r$}]\begingroup Radius\nomunit {\unit {m}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {N}$N$@[{\vphantom {N}$N$}]\begingroup Number of ...\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {v}$\omega $@[{\vphantom {v}$\omega $}]\begingroup Angular velocity\nomunit {\unitfrac {1}{s}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {i}$\alpha $@[{\vphantom {i}$\alpha $}]\begingroup Inclination\nomunit {\unit {\degree }}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {t}$\gamma $@[{\vphantom {t}$\gamma $}]\begingroup Transmission ratio\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {e}$e$, $\eta $@[{\vphantom {e}$e$, $\eta $}]\begingroup Efficiency\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {T}$\vartheta $@[{\vphantom {T}$\vartheta $}]\begingroup Temperature\nomunit {\unit {\celsius }}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {G}$G$@[{\vphantom {G}$G$}]\begingroup Global irradiance\nomunit {\unitfrac {W}{m$^2$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {P}$\lambda $@[{\vphantom {P}$\lambda $}]\begingroup Power loss coefficient\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {c}$\nu $, $\kappa $, $\Delta \vartheta $@[{\vphantom {c}$\nu $, $\kappa $, $\Delta \vartheta $}]\begingroup Modeling coefficients\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {V}$V$@[{\vphantom {V}$V$}]\begingroup Voltage\nomunit {\unit {V}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {R}$R$@[{\vphantom {R}$R$}]\begingroup Resistance\nomunit {\unit {$\Omega $}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {c}$I$@[{\vphantom {c}$I$}]\begingroup Current\nomunit {\unit {A}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {E}$E$@[{\vphantom {E}$E$}]\begingroup Energy\nomunit {\unit {J}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {E}$\tilde {E}$@[{\vphantom {E}$\tilde {E}$}]\begingroup Energy approximation\nomunit {\unit {J}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {x}$x$@[{\vphantom {x}$x$}]\begingroup Fraction\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {d}$d$@[{\vphantom {d}$d$}]\begingroup Distance\nomunit {\unit {m}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {t}$t$@[{\vphantom {t}$t$}]\begingroup Time\nomunit {\unit {s}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {C}$Q$@[{\vphantom {C}$Q$}]\begingroup Charge\nomunit {\unit {C}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {T}$T$@[{\vphantom {T}$T$}]\begingroup Torque\nomunit {\unit {N$\,$m}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {h}$h$@[{\vphantom {h}$h$}]\begingroup Height\nomunit {\unit {m}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {a}$\beta $, $\theta $@[{\vphantom {a}$\beta $, $\theta $}]\begingroup Angles\nomunit {°}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {c}$p$, $q$, $u$@[{\vphantom {c}$p$, $q$, $u$}]\begingroup Strategy coefficients\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {r}$\Delta $@[{\vphantom {r}$\Delta $}]\begingroup Root\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {a}$a$@[{\vphantom {a}$a$}]\begingroup Acceleration\nomunit {\unitfrac {m}{s$^2$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {v}$\overline {v}$@[{\vphantom {v}$\overline {v}$}]\begingroup Mean velocity\nomunit {\unitfrac {m}{s}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {t}$t^*$@[{\vphantom {t}$t^*$}]\begingroup Minimal time\nomunit {\unit {s}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {f}$f$@[{\vphantom {f}$f$}]\begingroup Function\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {M}$\Theta $@[{\vphantom {M}$\Theta $}]\begingroup Moment of inertia\nomunit {\unit {kg$\,$m$^2$}}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{A\vphantom {z}$z$@[{\vphantom {z}$z$}]\begingroup Parameter for the sensitivity analysis\nomunit {--}\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {a}aero@[{\vphantom {a}aero}]\begingroup Aerodynamic\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {g}grav@[{\vphantom {g}grav}]\begingroup Gravitational\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {t}trac@[{\vphantom {t}trac}]\begingroup Traction\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {w}w@[{\vphantom {w}w}]\begingroup Wheel\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {r}roll@[{\vphantom {r}roll}]\begingroup Rolling\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {b}bear@[{\vphantom {b}bear}]\begingroup Bearing\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {t}tot@[{\vphantom {t}tot}]\begingroup Total\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {e}eff@[{\vphantom {e}eff}]\begingroup Effective\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {m}mot@[{\vphantom {m}mot}]\begingroup Electric Motor\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {m}mec@[{\vphantom {m}mec}]\begingroup Mechanical\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {g}gb@[{\vphantom {g}gb}]\begingroup Gear box\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {m}max@[{\vphantom {m}max}]\begingroup Maximal\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {m}min@[{\vphantom {m}min}]\begingroup Minimal\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {e}el@[{\vphantom {e}el}]\begingroup Electrical\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {c}CF@[{\vphantom {c}CF}]\begingroup Correcting factor\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {s}STC@[{\vphantom {s}STC}]\begingroup Standard condition\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {a}amb@[{\vphantom {a}amb}]\begingroup Ambient\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {b}bat@[{\vphantom {b}bat}]\begingroup Battery\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {o}oc@[{\vphantom {o}oc}]\begingroup Open circuit\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {c}coul@[{\vphantom {c}coul}]\begingroup Coulombic\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {r}rot@[{\vphantom {r}rot}]\begingroup Rotational\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {i}$i$, $n$@[{\vphantom {i}$i$, $n$}]\begingroup Indices\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {s}sim@[{\vphantom {s}sim}]\begingroup Simulation\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {p}pot@[{\vphantom {p}pot}]\begingroup Potential\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {i}ineff@[{\vphantom {i}ineff}]\begingroup Inefficiency\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {d}det@[{\vphantom {d}det}]\begingroup Detection\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {o}opt@[{\vphantom {o}opt}]\begingroup Optimal\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {s}s@[{\vphantom {s}s}]\begingroup Stop\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {n}ns@[{\vphantom {n}ns}]\begingroup Next stop\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {d}dec@[{\vphantom {d}dec}]\begingroup Deceleration\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {a}acc@[{\vphantom {a}acc}]\begingroup Acceleration\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {r}ref@[{\vphantom {r}ref}]\begingroup Reference\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {b}up@[{\vphantom {b}up}]\begingroup Upper bound\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {b}lo@[{\vphantom {b}lo}]\begingroup Lower bound\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {d}driv@[{\vphantom {d}driv}]\begingroup Driving\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {s}sol@[{\vphantom {s}sol}]\begingroup Solar\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{B\vphantom {b}budg@[{\vphantom {b}budg}]\begingroup Budget\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DETH@[{ETH}]\begingroup Eidgen\"{o}ssische Technische Hochschule\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DIDSC@[{IDSC}]\begingroup Institute for Dynamic Systems and Control\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DBWSC@[{BWSC}]\begingroup Bridgestone World Solar Challenge\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DD-MAVT@[{D-MAVT}]\begingroup Departement Maschinenbau und Verfahrenstechnik\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DD-ITET@[{D-ITET}]\begingroup Departement Informationstechnologie und Elektrotechnik\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DPV@[{PV}]\begingroup Photovoltaic\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DSoC@[{SoC}]\begingroup State of charge\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DSoE@[{SoE}]\begingroup State of energy\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DMPPT@[{MPPT}]\begingroup Maximum power point tracking\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DLVD@[{LVD}]\begingroup Longitudinal vehicle dynamics\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DMOI@[{MOI}]\begingroup Moment of inertia\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DARW@[{ARW}]\begingroup Anti-reset windup\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DPI@[{PI}]\begingroup Proportional integral\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{DNaN@[{NaN}]\begingroup Not a number\nomeqref {0}|nompageref}{1}
